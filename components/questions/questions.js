@@ -1,7 +1,7 @@
 /**
  * Created by hammad on 05/08/2015.
  */
-app.controller('QuestionsController',function($location,$rootScope){
+app.controller('QuestionsController',function($location,$rootScope,mainService){
     this.counter=0;
     this.qNo=1;
     this.questionFlag=true;
@@ -125,17 +125,17 @@ app.controller('QuestionsController',function($location,$rootScope){
             vm.option = "";
         }
 
-        vm.i++;
 
-        if (vm.i > vm.questionsBank.length - 1) {
 
-            vm.questionFlag=false;
-            vm.points=(vm.points/$rootScope.total)*100
+        if (vm.qNo > vm.questionsBank.length-1) {
+            vm.points=(vm.points/$rootScope.total)*100;
             $rootScope.totalMarks = vm.points;
+            mainService.goToPage('/result');
+
         }
         else{
             vm.qNo++;
-
+            vm.i++;
         }
 
     }

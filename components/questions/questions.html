@@ -1,6 +1,6 @@
 <div class="content">
 <h1>HTML Quiz</h1>
-    <div class="q1" ng-show="questions.questionFlag">
+    <div class="q1">
         <p class="questionPara"> {{questions.qNo}}) {{questions.questionsBank[questions.i].text}}</p>
 
     </div>
@@ -25,9 +25,6 @@
             </li>
         </ul>
 
-        <button class="btn-success nxtBtn" ng-click="questions.next()">Next</button>
+        <button class="btn btn-success nxtBtn" ng-click="questions.next()">Next</button>
 
-    <div ng-hide="questions.questionFlag">
-        <h3>Your Score: {{$root.totalMarks}}%</h3>
-    </div>
 </div>

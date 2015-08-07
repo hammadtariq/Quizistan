@@ -9,7 +9,9 @@ app.controller("IndexController", function ($router) {
         {path:'/', redirectTo:'home'},
         {path:'/home', component:'home'},
         {path:'/quiz', component:'quiz'},
-        {path:'/questions', component:'questions'}
+        {path:'/questions', component:'questions'},
+        {path:'/adminpanel', component:'adminpanel'},
+        {path:'/result', component:'result'}
 
     ]);
 
