@@ -1,6 +1,10 @@
 .loginPanel{
-    background-color: #f4f5ff;
-    height: 300px;
-    width: 50%;
-    margin: 0 auto;
+    height: 200px;
+    margin-top: 10px ;
+}
+aside{
+    height: 600px;
+    width: 16%;
+    background-color: #ffe6dc;
+    float: right;
 }

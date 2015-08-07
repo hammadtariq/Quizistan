@@ -11,7 +11,8 @@ app.controller("IndexController", function ($router) {
         {path:'/quiz', component:'quiz'},
         {path:'/questions', component:'questions'},
         {path:'/adminpanel', component:'adminpanel'},
-        {path:'/result', component:'result'}
+        {path:'/result', component:'result'},
+        {path:'/newquiz', component:'newquiz'}
 
     ]);
 
