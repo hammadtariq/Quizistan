@@ -1,0 +1,33 @@
+<div class="content">
+<h1>HTML Quiz</h1>
+    <div class="q1" ng-show="questions.questionFlag">
+        <p class="questionPara"> {{questions.qNo}}) {{questions.questionsBank[questions.i].text}}</p>
+
+    </div>
+
+        <ul>
+
+
+            <li class="options">
+                <label>
+                    <input type="radio" name="opt" ng-model="questions.option" value="{{questions.questionsBank[questions.i].option1}}" > {{questions.questionsBank[questions.i].option1}}
+                </label>
+            </li>
+            <li class="options">
+                <label>
+                    <input type="radio" name="opt" ng-model="questions.option" value="{{questions.questionsBank[questions.i].option2}}" > {{questions.questionsBank[questions.i].option2}}
+                </label>
+            </li>
+            <li class="options">
+                <label>
+                    <input type="radio" name="opt" ng-model="questions.option" value="{{questions.questionsBank[questions.i].option3}}" > {{questions.questionsBank[questions.i].option3}}
+                </label>
+            </li>
+        </ul>
+
+        <button class="btn-success nxtBtn" ng-click="questions.next()">Next</button>
+
+    <div ng-hide="questions.questionFlag">
+        <h3>Your Score: {{$root.totalMarks}}%</h3>
+    </div>
+</div>
