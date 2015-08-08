@@ -6,3 +6,13 @@
     text-align: left;
     list-style: none;
 }
+.questionsArea{
+    background-color: #f4f4f4;
+    padding: 4%;
+    margin: 5%;
+
+}
+.nxtBtn{
+    margin-left: 50%;
+    margin-top: 2%;
+}

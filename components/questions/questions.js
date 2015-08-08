@@ -7,6 +7,7 @@ app.controller('QuestionsController',function($location,$rootScope,mainService){
     var vm = this;
     vm.points = 0;
     vm.questionsBank=mainService.questionArray();
+    vm.questionLength=vm.questionsBank.length;
     $rootScope.total = vm.questionsBank.length * 10;
     vm.i = 0;
     vm.option = "";

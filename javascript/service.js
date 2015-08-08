@@ -1,7 +1,7 @@
 /**
  * Created by hammad on 05/08/2015.
  */
-app.service('mainService',function($location){
+app.service('mainService',function($location,$rootScope){
     this.goToPage = function(go){
         $location.path(go);
     };
@@ -89,8 +89,14 @@ app.service('mainService',function($location){
     ];
 
     this.questionArray=function(){
-        return questionsBank;
+        if($rootScope.choosedQuestionsBank != undefined){
+            return $rootScope.choosedQuestionsBank;
+        }
+        else{
+            return questionsBank;
+        }
     };
+
 
 
 });

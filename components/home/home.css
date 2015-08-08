@@ -3,8 +3,9 @@
     margin-top: 10px ;
 }
 aside{
-    height: 600px;
-    width: 16%;
-    background-color: #ffe6dc;
+    height: 650px;
+    width: 20%;
+    padding: 1%;
+    background-color: #f4f4f4;
     float: right;
 }

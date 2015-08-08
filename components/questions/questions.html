@@ -1,5 +1,7 @@
 <div class="content">
-<h1>HTML Quiz</h1>
+<h1 style="text-align: center; padding-top: 3%">HTML Quiz</h1>
+    <div style="text-align: center; font-weight: bold;">No of Questions: {{questions.qNo}} / {{questions.questionLength}}</div>
+   <section class="questionsArea">
     <div class="q1">
         <p class="questionPara"> {{questions.qNo}}) {{questions.questionsBank[questions.i].text}}</p>
 
@@ -26,5 +28,5 @@
         </ul>
 
         <button class="btn btn-success nxtBtn" ng-click="questions.next()">Next</button>
-
+   </section>
 </div>
