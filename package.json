@@ -1,12 +1,13 @@
 {
-  "name": "Quizistan(mongodb)",
+  "name": "Quizistan",
   "version": "1.0.0",
-  "description": "",
+  "description": "quiz app using angular and bootstrap",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "hammad tariq <hammadtariq65@gmail.com>",
+  "keywords":["quiz","angular","bootstrap"]
   "license": "ISC",
   "dependencies": {
     "express": "^4.13.3"
